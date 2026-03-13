@@ -1,62 +1,47 @@
-**AI Agent Assistant with Tools and Memory**
+**AI Assistant with Tools and Memory**
 
-An intelligent Python-based AI assistant built using LangChain and LangGraph that can perform arithmetic calculations, provide date and time information, greet users, generate random numbers, and remember past interactions. The assistant is interactive, adaptive, and designed to help automate tasks efficiently.
+AI Assistant with Tools and Memory is a Python-based command-line AI application that uses LangChain and LangGraph. It can perform arithmetic operations, provide greetings, generate random numbers, calculate square roots, convert temperatures, give the current day and time, and remember previous conversations.
+
+Users can interact with the AI by typing commands or questions, and the AI will respond using the appropriate tool or chat response.
 
 **Features**
 
-Performs addition, subtraction, multiplication, division, power, and square root calculations
+Arithmetic operations: addition, subtraction, multiplication, division, exponentiation, square root
 
-Converts Celsius to Fahrenheit
+Utilities: current time, current day, temperature conversion
 
-Generates random numbers within a given range
+Random number generation between user-defined limits
 
-Provides current time and day
+Greeting tool for natural interaction
 
-Greets users with personalized messages
+Memory system to remember previous conversation context
 
-Maintains memory of past interactions for context-aware responses
+Command-line interface for interactive chat
 
-Built using Python, LangChain, LangGraph, and OpenAI API
+**Environment Variables**
 
-**Installation**
+Create a .env file in the project root and add your OpenAI API key.
 
-1. Clone the repository:
+OPENAI_API_KEY=(your_api_key_here)
 
-git clone https://github.com/hitensharma18/python-ai-agent.git
+The .env file is not included in this repository for security reasons.
 
-2. Navigate into the project folder:
+**Technologies Used**
 
-cd python-ai-agent
+Python
 
-3. Create and activate a virtual environment:
+LangChain
 
-python -m venv .venv
-# Windows
-.venv\Scripts\activate
-# macOS/Linux
-source .venv/bin/activate
+LangGraph
 
-4. Install dependencies:
+OpenAI API
 
-pip install -r requirements.txt
+python-dotenv
 
-5. Add your OpenAI API key to a .env file:
+**Learning Source**
 
-OPENAI_API_KEY=your_openai_api_key_here
+This project is based on Project 1 from the following tutorial:
 
-**Usage**
+https://www.youtube.com/watch?v=XZdY15sHUa8&t=2773s
 
-Run the assistant using:
-
-uv run main.py
-
-Type your commands, ask it to calculate, get the time, or greet someone. Type quit to exit.
-
-**Contributing**
-
-Contributions are welcome. Please ensure no secrets or API keys are included in commits.
-
-**License**
-
-Specify your license here (e.g., MIT, Apache 2.0).
-
+The implementation was extended with additional features such as a memory system, multiple arithmetic tools, random number generation, and utility commands for a more interactive experience.
